@@ -34,14 +34,14 @@ export default function Comment() {
         </>
       ) : (
         <>
-          <h2>울버린이 크리스마스를 축하해주러 왔다..!</h2>
           <img
-            src="/wolverine.png"
+            src="./wolverine.png"
             style={{
-              width: "300px", // 부모 요소 너비의 50%
-              height: "300px", // 이미지 비율 유지
+              width: "200px", // 부모 요소 너비의 50%
+              height: "auto", // 이미지 비율 유지
             }}
           ></img>
+          <h2>울버린이 크리스마스를 축하해주러 왔다..!</h2>
         </>
       )}
     </div>
