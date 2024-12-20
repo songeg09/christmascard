@@ -37,7 +37,7 @@ export default function Comment() {
           <img
             src="./wolverine.png"
             style={{
-              width: "200px", // 부모 요소 너비의 50%
+              width: "300px", // 부모 요소 너비의 50%
               height: "auto", // 이미지 비율 유지
             }}
           ></img>
