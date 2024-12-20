@@ -2,7 +2,7 @@ import React from "react";
 import "./Snowfall.css";
 
 export default function Snowfall() {
-  const snowflakes = Array.from({ length: 200 });
+  const snowflakes = Array.from({ length: 50 });
 
   return (
     <>

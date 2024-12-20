@@ -22,19 +22,19 @@ export default function Comment() {
     <div onClick={handleClick}>
       {count === 0 ? (
         <>
-          <h1>Merry Christmas</h1>
-          <h1>I Love You</h1>
-          <h1>Thank You</h1>
-          <h1>From Cool Eungyo</h1>
+          <h2>Merry Christmas</h2>
+          <h2>I Love You</h2>
+          <h2>Thank You</h2>
+          <h2>From Cool Eungyo</h2>
         </>
       ) : count > 0 && count < 5 ? (
         <>
-          <h1>화면을 {5 - count}번 더 누르면</h1>
-          <h1>무언가 나타날지도?</h1>
+          <h2>화면을 {5 - count}번 더 누르면</h2>
+          <h2>무언가 나타날지도?</h2>
         </>
       ) : (
         <>
-          <h1>울버린이 크리스마스를 축하해주러 왔다..!</h1>
+          <h2>울버린이 크리스마스를 축하해주러 왔다..!</h2>
           <div
             className={`wolverine`} // 위치에 따라 클래스 변경
           ></div>
