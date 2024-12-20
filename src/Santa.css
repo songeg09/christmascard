@@ -1,0 +1,57 @@
+/* 공통 산타 스타일 */
+.santa {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-image: url("/slay.png"); /* 산타 이미지 경로 */
+  background-size: contain; /* 이미지가 잘리지 않도록 설정 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  background-position: center; /* 이미지를 가운데 정렬 */
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+/* 상단에서 날아가는 산타 */
+.top-santa {
+  top: 10%; /* 상단에서 시작 */
+  left: -200px; /* 왼쪽 바깥 */
+  animation-name: santaFlyTop; /* 상단 애니메이션 적용 */
+  transform: scaleX(-1);
+}
+
+@keyframes santaFlyTop {
+  0% {
+    left: -200px;
+    transform: scaleX(-1) scale(0.5) rotate(-15deg); /* 작고 살짝 기울임 */
+  }
+  50% {
+    left: 50%; /* 화면 중앙 */
+    transform: scaleX(-1) scale(0.8) rotate(0deg); /* 크기가 커짐 */
+  }
+  100% {
+    left: 110vw; /* 오른쪽 바깥 */
+    transform: scaleX(-1) scale(0.5) rotate(15deg); /* 다시 작아짐 */
+  }
+}
+
+/* 하단에서 반대 방향으로 날아가는 산타 */
+.bottom-santa {
+  bottom: 10%; /* 하단에서 시작 */
+  left: 110vw; /* 오른쪽 바깥 */
+  animation-name: santaFlyBottom; /* 하단 애니메이션 적용 */
+}
+
+@keyframes santaFlyBottom {
+  0% {
+    left: 110vw;
+    transform: scale(2) rotate(-15deg); /* 크게 시작 */
+  }
+  50% {
+    left: 50%; /* 화면 중앙 */
+    transform: scale(2.2) rotate(0deg); /* 가장 크게 보임 */
+  }
+  100% {
+    left: -200px; /* 왼쪽 바깥 */
+    transform: scale(2) rotate(15deg); /* 원래 크기로 돌아감 */
+  }
+}
