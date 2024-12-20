@@ -38,14 +38,8 @@ export default function Comment() {
           <img
             src="/wolverine.png"
             style={{
-              width: "50%", // 부모 요소 너비의 50%
-              maxWidth: "400px", // 최대 너비 400px
-              height: "auto", // 이미지 비율 유지
-              position: "fixed", // 화면 상단에 고정
-              top: "10px", // 상단에서 10px 떨어짐
-              left: "50%", // 중앙 정렬
-              transform: "translateX(-50%)", // 가로 축 기준 중앙 정렬
-              zIndex: 10, // 다른 요소 위에 표시
+              width: "300px", // 부모 요소 너비의 50%
+              height: "300px", // 이미지 비율 유지
             }}
           ></img>
         </>
