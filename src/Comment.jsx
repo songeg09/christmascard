@@ -35,7 +35,9 @@ export default function Comment() {
       ) : (
         <>
           <h1>울버린이 크리스마스를 축하해주러 왔다..!</h1>
-          <img src="/wolverine.png" alt="Wolverine" />
+          <div>
+            <img src="/wolverine.png" alt="Wolverine" />
+          </div>
         </>
       )}
     </div>
