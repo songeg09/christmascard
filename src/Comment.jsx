@@ -1,6 +1,5 @@
 import "./Comment.css";
 import React, { useState, useEffect } from "react";
-import EasterEgg from "./EasterEgg";
 
 export default function Comment() {
   const [count, setCount] = useState(0);
