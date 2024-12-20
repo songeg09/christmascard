@@ -35,9 +35,9 @@ export default function Comment() {
       ) : (
         <>
           <h1>울버린이 크리스마스를 축하해주러 왔다..!</h1>
-          <div>
-            <img src="/wolverine.png" alt="Wolverine" />
-          </div>
+          <div
+            className={`wolverine`} // 위치에 따라 클래스 변경
+          ></div>
         </>
       )}
     </div>
