@@ -9,14 +9,14 @@ export default function Comment() {
   };
 
   useEffect(() => {
-    if (count === 5) {
+    if (count >= 5) {
       const timer = setTimeout(() => {
-        setCount(0); // count를 0으로 초기화
-      }, 10000); // 애니메이션 시간 (3초)
+        setCount(0);
+      }, 10000);
 
-      return () => clearTimeout(timer); // 타이머 정리
+      return () => clearTimeout(timer);
     }
-  }, [count]); // count가 5가 될 때 실행
+  }, [count]);
 
   return (
     <div onClick={handleClick}>
